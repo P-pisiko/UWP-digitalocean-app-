@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DigitalOcienDataset" targetNamespace="http://tempuri.org/DigitalOcienDataset.xsd" xmlns:mstns="http://tempuri.org/DigitalOcienDataset.xsd" xmlns="http://tempuri.org/DigitalOcienDataset.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ProductsConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ProductsConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.EnesFidanAssignment2.Properties.Settings.GlobalReference.Default.ProductsConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="productssTableAdapter" GeneratorDataComponentClassName="productssTableAdapter" Name="productss" UserDataComponentName="productssTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ProductsConnectionString (Settings)" DbObjectName="dbo.products" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO products
+                         (Title, Descriptioon)
+VALUES        (Title, Descriptoon)</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DigitalOcienDataset" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DigitalOcienDataset" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DigitalOcienDataset">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="productss" msprop:Generator_RowEvHandlerName="productssRowChangeEventHandler" msprop:Generator_RowDeletedName="productssRowDeleted" msprop:Generator_RowDeletingName="productssRowDeleting" msprop:Generator_RowEvArgName="productssRowChangeEvent" msprop:Generator_TablePropName="productss" msprop:Generator_RowChangedName="productssRowChanged" msprop:Generator_RowChangingName="productssRowChanging" msprop:Generator_TableClassName="productssDataTable" msprop:Generator_RowClassName="productssRow" msprop:Generator_TableVarName="tableproductss" msprop:Generator_UserTableName="productss">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="product" msprop:Generator_RowEvHandlerName="productRowChangeEventHandler" msprop:Generator_RowDeletedName="productRowDeleted" msprop:Generator_RowDeletingName="productRowDeleting" msprop:Generator_RowEvArgName="productRowChangeEvent" msprop:Generator_TablePropName="product" msprop:Generator_RowChangedName="productRowChanged" msprop:Generator_RowChangingName="productRowChanging" msprop:Generator_TableClassName="productDataTable" msprop:Generator_RowClassName="productRow" msprop:Generator_TableVarName="tableproduct" msprop:Generator_UserTableName="product">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Title" msprop:Generator_ColumnPropNameInRow="Title" msprop:Generator_ColumnPropNameInTable="TitleColumn" msprop:Generator_ColumnVarNameInTable="columnTitle" msprop:Generator_UserColumnName="Title" type="xs:string" />
+              <xs:element name="Descriptoon" msprop:Generator_ColumnPropNameInRow="Descriptoon" msprop:Generator_ColumnPropNameInTable="DescriptoonColumn" msprop:Generator_ColumnVarNameInTable="columnDescriptoon" msprop:Generator_UserColumnName="Descriptoon" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:product" />
+      <xs:field xpath="mstns:Title" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

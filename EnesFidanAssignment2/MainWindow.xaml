@@ -1,0 +1,12 @@
+﻿<Window x:Class="EnesFidanAssignment2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EnesFidanAssignment2"
+        mc:Ignorable="d"
+        xmlns:components="clr-namespace:EnesFidanAssignment2.UserControls"
+        Title="MainWindow" Height="600" Width="1100"
+        Background="#f2f2f2">
+    <components:Products x:Name="Products" />
+</Window>
